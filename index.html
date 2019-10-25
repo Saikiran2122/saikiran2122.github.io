@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AGBSC</title>
+    <style>
+     .navigator{
+     	float: right;
+     	list-style-type: none;
+     	margin-right: 20px;
+     	margin-top: 10px;
+     }
+     .navigator li{
+          	display: inline;
+          }
+     .navigator li a{
+     	padding: 12px;
+     	margin: 5px;
+     	text-decoration: none;
+     	color: #1a75ff;
+     	border: 1px solid transparent;
+     	border-radius: 5px;
+     	transition: 1s ease;
+
+     }
+     .navigator li a:hover{
+        	background-color: #1a75ff;
+        	color: white;
+        }
+      .logo img {
+      	float: left;
+      	width: 150px;
+      	height: 100px;
+      	margin-left: 50px;
+      }
+      .helptxt{
+      	float: left;
+      	width: 50%;
+      }
+    .helptxt h1{
+    	text-transform: uppercase;
+    	margin-left: 100px;
+    	margin-top: 120px;
+    	font-size: 38px;
+    	color: #1a75ff;
+    	font-family:raleway;
+
+    }
+    .helptxt p{
+    	margin-left: 100px;
+    	font-family:raleway;
+
+    }
+    .img1 img{
+    	margin-top: 70px;
+    	float: right;
+    	margin-right:150px;
+    	height: 270px;
+    	width: 300px;
+    }
+    .startbutton{
+    	margin-left: 100px;
+    	padding: 10px;
+     	text-decoration: none;
+     	color:white;
+     	background-color: #1a75ff;
+     	border: 1px solid transparent;
+     	border-radius: 5px;
+    }
+    .overview{
+    	margin-top: 150px;
+    	background-color:#f2f2f2;
+    	padding: 40px;
+    }
+    .overviewimg img{
+    	float: right;
+    	margin-right: 50px;
+    	margin-top: 20px;
+    	width: 300px;
+    	height: 250px;
+    }
+    .overviewtxt{
+    	margin-left: 50px;
+    	width: 70%;
+    	font-family:raleway;
+    	font-size: 18px;
+    }
+    .impsub{
+    	margin-top:70px;
+    	margin-left: 90px;
+    	margin-right: 10px;
+    }
+    .sub1{
+    	width: 30%;
+    	float: left;
+    	padding: 20px;
+    	font-size: 16px; 
+    }
+    .moresubjects{
+    	margin-left: 100px;
+    	color: white;
+    	text-decoration: none;
+    	padding: 10px;
+    	float: right;
+    	margin-right: 60px;
+    	background-color: #1a75ff;
+     	border: 1px solid transparent;
+     	border-radius: 5px;
+     	text-transform: lowercase;
+    }
+    .study{
+        margin-top: 100px;
+    }
+    .studyreasons{
+    	float: left;
+    	width: 50%;
+    }
+    .studyreasons h1{
+    	font-size: 43px;
+    	margin-left: 100px;
+    	font-family: raleway;
+    }
+    .studyreasons p img{
+    	margin-right: 5px;
+    	width: 30px;
+    }
+    .studyreasons p{
+    	margin-left: 170px;
+    	font-family:raleway;
+    	font-size: 30px;
+    }
+    .studyimg img{
+    	margin-right: 100px;
+    	float: right;
+    	width: 500px;
+    }
+    .contact{
+    	margin-top: 120px;
+    }
+    .contacthead p{
+    	font-family: raleway;
+    	font-size: 30px;
+    	margin-left: 620px;
+    }
+    .contactforms{
+    	margin-left: 300px;
+    }
+    .forms{
+    	width: 33%;
+    	padding: 15px 15px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+    .formsfull{
+    	width: 71%;
+    	padding: 15px 15px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+    .formsfullmes{
+    	width: 71%;
+    	padding: 28px 15px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+    .formsbutton{
+    	background-color: #1a75ff;
+    	color: white; 
+    	width: 13%;
+    	padding: 12px 15px;
+    	margin: 8px;
+        border-radius:10px;
+        margin-left: 350px;
+    }
+    .loginend{
+    	margin-top: 80px;
+    	width: 100%;
+    	height: 240px;
+    }
+    .loginend h3 {
+    	font-family: raleway;
+    	text-align: center;
+    	font-size: 40px;
+    }
+    .loginend p {
+    	font-family: raleway;
+    	text-align: center;
+    	font-size: 50px;
+    }
+    .loginendstyle{
+    	font-family: raleway;
+    	
+        border-radius: 50px;
+    	padding: 10px;
+    	border: 1px solid #1a75ff;
+    	margin-left: 650px;
+    	color: black;
+    	text-decoration: none;
+    }
+    .loginendstyle:hover{
+    	color: #1a75ff;
+    	padding: 12px;
+    }
+   .footerstyle{
+   	    margin-top: 80px;
+    	background: #1a75ff;
+    }
+    .footer{
+    	float: left;
+    	margin-left: 200px;
+    	width: 15%;  	
+    }
+    .footer p{
+    	font-family: raleway;
+    	color: white;
+    	font-size: 50px;
+    }
+    .footer-menu-one {
+    	float: left;
+    	width: 15%;    
+    }
+    .footer-menu-one p {
+    	font-family: raleway;
+    	color: white;
+    	font-size: 20px;
+    	margin-left: 40px;
+    }
+    .footer-menu-one ul{
+    	list-style-type: none;
+    }
+    .footer-menu-one ul li{
+    	padding: 3px;
+    }
+    .footer-menu-one ul li a{
+    	text-decoration: none;
+    	font-family: raleway;
+    	color: white;
+    }
+    .footer-menu-two {
+        float: left;
+        width: 15%;       
+    }
+    .footer-menu-two p {
+    	font-family: raleway;
+    	color: white;
+    	font-size: 20px;
+    	margin-left: 40px;
+    }
+    .footer-menu-two ul{
+    	list-style-type: none;
+    }
+    .footer-menu-two ul li{
+    	padding: 3px;
+    }
+    .footer-menu-two ul li a{
+    	font-family: raleway;
+    	color: white;
+    	text-decoration: none;
+    }
+    .footer-menu-three {
+        float: left;
+        width: 15%;       
+    }
+    .footer-menu-three p{
+    	font-family: raleway;
+    	color: white;
+    	font-size: 20px;
+    	margin-left: 40px;
+    }
+    .footer-menu-three ul{
+    	list-style-type: none;
+    }
+    .footer-menu-three ul li{
+    	padding: 3px;
+    }
+    .footer-menu-three ul li a{
+    	font-family: raleway;
+    	color: white;
+    	text-decoration: none;
+    }
+    .copyright p{
+    	font-family: raleway;
+    	color: white;
+    	margin-left: 380px;
+    }
+
+    </style>
+
+
+</head>
+<body>
+<div>
+	<div class="navigator">
+		<ul>
+			<li><a href="">HOME</a></li>
+			<li><a href="">COURSE OVERVIEW</a></li>
+			<li><a href="">SYLLABUS</a></li>
+			<li><a href="">PROJECTS</a></li>
+			<li><a href="">CAREERS</a></li>
+			<li><a href="">LOGIN</a></li>
+		</ul>
+	</div>
+
+	<div class="logo">
+		<img src="logo.png">
+	</div>
+</div>
+
+<div style="clear: both;"></div>
+
+<div>
+	<div class="helptxt">
+		<h1>Are you willing to join in Agriculture B.Sc ?</h1>
+		<p>Need a guide to clarify about Agriculture B.Sc.Let's go through These things.We will help you through out your carrer.</p>
+	</div>
+	<div class="img1">
+		<img src="img1.jpg">
+	</div>
+</div>
+
+<div style="clear: both;"></div>
+
+<div>
+	<a class="startbutton" href="">Let's Get started..</a>
+</div>
+
+<br>
+
+<div class="overview">
+	<div class="overviewimg">
+		<img src="course overview.png">
+	</div>
+	<div class="overviewtxt">
+		<p style="font-family:raleway"><b>Course Overview:-</b></p>
+		<p>Think studying agriculture is just about learning how to plant seeds and shear sheep? Think again! Agriculture has been at the center of human civilization since, well, since civilization began – and it remains at the heart of many of the most pressing issues for modern societies.Poverty, famine, development economics, genetic modification, environmental sustainability, disease epidemics… agriculture intersects with all of these, and agricultural graduates are involved in research and development work in all these fields.– B.Sc. Agriculture or Bachelor of Science in Agriculture is 4-year undergraduate degree course offered by the Universities for 10+2 students preferably with Science stream. The study of agriculture is known as agricultural science. B.Sc. Agriculture courses makes students familiar with various facets of agriculture and its related specialization.The main aim of this program is to use the above mentioned concepts to train students improve agriculture productivity, manage products and pave way for future developments through research activities.</p>
+	</div>
+</div>
+
+
+<div class="impsub">
+    <h3 style="font-size: 35px;margin-left: 300px;"><b>Top Most Subjects Present In the Programme</b></h3>
+    <div class="sub1">
+	   <h3 style="font-family: raleway">Agronomy</h3>
+	   <p style="margin-top: 20px;font-family:raleway ">Agronomy is a branch of agricultural science that deals with the study of crops and the soils in which they grow. Agronomists work to develop methods that will improve the use of soil and increase the production of food and fiber crops.Basics of Agronomy, Field Crops (Kharif), Field Crops (Rabi), Crop Production, Organic Farming, Sustainable agriculture.</p>
+	</div>
+    <div class="sub1">
+	   <h3 style="font-family: raleway">Plant Genetics</h3>
+	   <p style="margin-top: 20px;font-family: raleway;">Plant genetics is the study of genes, genetic variation, and heredity specifically in Plants.It is generally considered a field of biology and botany, but intersects frequently with many other life sciences and is strongly linked with the study of information systems.Plant genetics is similar in many ways to animal genetics but differs in a few key areas.</p>
+	</div>
+	    <div class="sub1">
+	   <h3 style="font-family: raleway">Soil Science</h3>
+	   <p style="margin-top: 20px; font-family: raleway">Soil science is the study of soil as a natural resource on the surface of the Earth including soil formation, classification and mapping; physical, chemical, biological, and fertility properties of soils; and these properties in relation to the use and management of soils.Introduction to Soil Science, Soil Fertility, Soil Chemistry, Fertilizers, Agricultural Chemistry.</p>
+	</div>
+</div>
+<div style="clear: both;"></div>
+
+<div>
+	<a style="font-family: raleway;" class="moresubjects" href="">SEE MORE COURSES</a>
+</div>
+<div style="clear: both;"></div>
+
+
+<div class="study">
+	<div class="studyreasons">
+	    <h1 class="heading">Why You Should Study Agriculture</h1>
+	    <p><img style="margin-right: 5px;" src="tick.png">Grand Scope</p>
+	    <p><img style="margin-right: 5px;" src="tick.png">Rich Curriculum</p>
+	    <p><img style="margin-right: 5px;" src="tick.png">Explore the Agricultural Arena</p>
+	    <p><img style="margin-right: 5px;" src="tick.png">Better Job Prospects</p>
+    </div>
+
+    <div class="studyimg">
+    	<img src="study.jpg">
+    </div>
+</div>
+
+<div style="clear: both;"></div>
+
+<div class="contact">
+	<div class="contacthead">
+		<p><b>Leave Your Message</b></p>
+	</div>
+	<div>
+		<form class="contactforms">
+			<input class="forms" type="text" name="name" placeholder="name">
+		    <input class="forms" type="email" name="email" placeholder="email" ><br>
+		    <input class="formsfull" type="tel" name="number" placeholder="mobile number" ><br>
+		    <input class="formsfullmes" type="message" name="message" placeholder="enter your message"><br> 
+			<input class="formsbutton" type="submit" name="submit">   
+		</form>
+	</div>
+</div>
+
+
+<div class="loginend">
+	<h3>Alpply for top most universities</h3>
+	<a class="loginendstyle" href="">Log in here to apply..</a>
+	<p>MAKE YOUR FUTURE BRIGHT.</p>
+</div>
+
+
+
+<footer>
+
+ <div class="footerstyle">
+	<div class="footer">
+		<p>INFO</p>
+	</div>
+	<div class="footer-menu-one">
+		<p>Pages</p>
+		<ul>
+			<li><a href="">Login</a></li>
+			<li><a href="">Register</a></li>
+			<li><a href="">Support</a></li>
+		</ul>
+	</div>
+	<div class="footer-menu-two">
+	    <p>Help</p>
+		<ul>
+			<li><a href="">FAQ</a></li>
+			<li><a href="">Terms & conditions</a></li>
+			<li><a href="">Blog</a></li>
+		</ul>
+	</div>
+	<div class="footer-menu-three">
+		<p>About us</p>
+		<ul>
+			<li><a href="">Company Information</a></li>
+			<li><a href="">Contact us</a></li>
+			<li><a href="">Reviews</a></li>
+		</ul>
+	</div>
+	<div style="clear: both;"></div>
+	<div class="copyright">
+	<p>© Radware Ltd. | 2019 All Rights Reserved. | Privacy Policy | Terms of Use | Legal Notice | Cookie Preferences</p>
+    </div>
+</div>
+</footer>
+
+
+</body>
+</html>
